@@ -26,8 +26,12 @@ typedef struct usr_infor_tag {
    struct usr_infor_tag *pNext_Usr_Infor;
 } USR_INFOR, *pUSR_INFOR;
 
-void system_init(const char *config_file_name, pUSR_ACCOUNT pUsr_Account, pUSR_INFOR pUsr_Infor);
+void system_init(const char *config_file_name, pUSR_ACCOUNT *pUsr_Account, pUSR_INFOR *pUsr_Infor);
 USR_ROLE role_confirm(pUSR_ACCOUNT pUsr_Account);
 SYSTEM_MENU_TYPE show_system_menu(USR_ROLE role);
-//SYSTEM_MENU_TYPE show_search_menu(SYSTEM_MENU_TYPE type, )
+SYSTEM_MENU_TYPE show_search_menu(SYSTEM_MENU_TYPE type, USR_ROLE role, pUSR_INFOR pUsr_Infor);
+void search_usr_infor_by_name(pUSR_INFOR pUsr_Infor_List, char *search_name);
+void search_usr_infor_by_id(pUSR_INFOR pUsr_Infor_List, SEARCH_ID search_id);
+
+
 #endif  // SIMS_H
