@@ -32,6 +32,13 @@ SYSTEM_MENU_TYPE show_system_menu(USR_ROLE role);
 SYSTEM_MENU_TYPE show_search_menu(SYSTEM_MENU_TYPE type, USR_ROLE role, pUSR_INFOR pUsr_Infor);
 void search_usr_infor_by_name(pUSR_INFOR pUsr_Infor_List, char *search_name);
 void search_usr_infor_by_id(pUSR_INFOR pUsr_Infor_List, SEARCH_ID search_id);
-
+void add_usr_infor(pUSR_INFOR pUsr_Infor_List, USR_ROLE role);
+void delete_usr_infor(pUSR_INFOR pUsr_Infor_List, USR_ROLE role);
+void update_usr_infor(pUSR_INFOR pUsr_Infor_List, USR_ROLE role);
+void search_usr_infor(pUSR_INFOR pUsr_Infor_List, USR_ROLE role);
+void add_usr_account(pUSR_ACCOUNT pUsr_Account_List, USR_ROLE role);
+void delete_usr_account(pUSR_ACCOUNT pUsr_Account_List, USR_ROLE role);
+void update_usr_account(pUSR_ACCOUNT pUsr_Account_List, USR_ROLE role);
+void search_usr_account(pUSR_ACCOUNT pUsr_Account_List, char *search_name);
 
 #endif  // SIMS_H
